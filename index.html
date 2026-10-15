@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Evolving Gaming Harnesses via Knowledge–Probing Co-Evolution. Test-time harness evolution around a frozen gaming VLA.">
-  <title>Evolving Gaming Harnesses via Knowledge–Probing Co-Evolution</title>
+  <meta name="description" content="KPHarness: Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses. Test-time harness evolution around a frozen gaming VLA.">
+  <title>KPHarness: Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses</title>
   <link rel="canonical" href="https://chenzk202212.github.io/adaptive-gaming-harnesses/">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -232,7 +232,7 @@
         <div class="container is-max-desktop" style="margin-top: 28px;">
           <div class="has-text-centered">
             <h1 class="title is-2 publication-title">
-              Evolving Gaming Harnesses via <span class="title-color">Knowledge–Probing Co-Evolution</span>
+              <span class="title-color">KPHarness:</span> Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses
             </h1>
             <h2 class="subtitle subtitle-small">
               Test-time harness evolution around a frozen gaming VLA
@@ -269,9 +269,9 @@
           <h2 class="title is-3">Abstract</h2>
         </div>
         <div class="content has-text-justified">
-          <p>Long-horizon gaming requires agents to diagnose stalled execution, recover from failures, and reuse experience across tasks. Existing execution harnesses typically rely on fixed intervention rules, limiting their ability to adapt to visually ambiguous failures. We introduce Knowledge–Probing Co-Evolution Harness (KPHarness), a framework that improves the execution harness surrounding a frozen vision-language-action model through interaction. KPHarness separates fast action execution from a slow research loop that diagnoses failures, proposes harness modifications, and verifies them through isolated paired sandbox evaluations.</p>
-          <p>Its central mechanism is knowledge–probing co-evolution, which turns outcome-driven harness search into evidence-guided evolution: transferable recovery knowledge provides intervention hypotheses, active probes test when they apply, and validated outcomes improve future knowledge and probe selection. We instantiate KPHarness with a gaming policy trained through supervised fine-tuning and reinforcement learning, and keep its parameters frozen throughout harness adaptation.</p>
-          <p>Experiments on 149 Minecraft tasks spanning mining, combat, and crafting show that knowledge-guided harness evolution substantially improves task coverage over both the bare actor and a manually specified fixed harness, while the complete framework further improves over knowledge-only evolution. Frozen evaluation on unseen tasks further shows that the evolved harness transfers beyond tasks encountered during adaptation. These results support external harness evolution as a means of converting grounded interaction feedback into transferable execution capability without further updating the underlying actor.</p>
+          <p>A failed gaming trajectory reveals that an agent needs intervention, but not necessarily how its execution harness should change. Effective harness adaptation therefore requires gathering diagnostic evidence, rather than merely proposing alternative recovery rules. We present KPHarness, a framework that adapts the external execution harness of a frozen vision-language-action model through knowledge–probing co-evolution. Recovery knowledge supplies context-specific intervention hypotheses that guide active probing; probe outcomes reveal when these hypotheses apply and provide evidence for refining both recovery knowledge and subsequent probe selection. This reciprocal process allows the harness to improve not only which interventions it applies, but also how it investigates failures.</p>
+          <p>KPHarness separates fast policy execution from a slower research loop that translates accumulated knowledge and probing evidence into bounded harness revisions. Each revision is compared with the incumbent under matched sandbox conditions and accepted only when the paired evaluation shows improvement. Recoveries supported by further validation are retained for cross-task reuse, while immediate interaction feedback and delayed episode-success credit update action- and knowledge-probing policies during adaptation.</p>
+          <p>Experiments on Minecraft tasks spanning mining, combat, and crafting show improved task coverage over bare policy execution, a manually specified fixed harness, and knowledge-only harness evolution with non-adaptive probing. Evaluation on previously unseen tasks further shows improved task completion with the evolved harness, knowledge bank, and probing policies held fixed, without additional search or persistent updates. These findings support knowledge–probing co-evolution as a mechanism for turning interaction experience into transferable harness improvements without further updating the underlying actor.</p>
         </div>
       </div>
     </section>
@@ -972,7 +972,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Citation</h2>
     <pre class="citation-box" id="bibtex">@misc{kpharness2027knowledge,
-  title = {Evolving Gaming Harnesses via Knowledge--Probing Co-Evolution},
+  title = {KPHarness: Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses},
   year  = {2027},
   note  = {Manuscript}
 }</pre>
@@ -984,7 +984,7 @@
 
 <footer class="footer" style="padding: 1.5rem; background: #f7f7f7;">
   <div class="content has-text-centered">
-    <p>Evolving Gaming Harnesses via Knowledge–Probing Co-Evolution</p>
+    <p>KPHarness: Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses</p>
   </div>
 </footer>
 
