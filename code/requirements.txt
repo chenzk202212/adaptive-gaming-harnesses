@@ -1,0 +1,7 @@
+# Core harness logic and local stub runs. Install a suitable PyTorch build
+# for your CPU/CUDA environment before this file when needed.
+torch
+numpy
+Pillow
+PyYAML
+omegaconf

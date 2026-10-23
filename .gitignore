@@ -1,0 +1,14 @@
+*.zip
+.cursor/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+code/curriculum/outputs/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
